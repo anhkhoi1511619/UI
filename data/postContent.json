@@ -1,0 +1,35 @@
+{
+  "id":"ac552dcc1741",
+  "title":"Study JetpackCompose",
+  "subtitle":"Try your best and stronger",
+  "url":"https://medium.com/androiddevelopers/from-java-programming-language-to-kotlin-the-idiomatic-way-ac552dcc1741",
+  "publication": {
+    "name":  "Nguyen Tran Anh Khoi",
+    "url":"https://cdn-images-1.medium.com/max/258/1*u7oZc2_5mrkcFaxkXEyfYA@2x.png"
+  },
+  "metaData": {
+    "author": {
+      "name":"Nguyen Tran Anh Khoi",
+      "url":"https://medium.com/@florina.muntenescu"
+    },
+    "date": "December 27",
+    "readTimeMinutes":1
+  },
+  "paragraph": [
+    {
+      "type":1,
+      "text":"Have studied for 1 years ago",
+      "markups":123
+    },
+    {
+      "type":1,
+      "text":"Work for NTQ Japan and at Gifu.",
+      "markups":123
+    },
+    {
+      "type":1,
+      "text":"This is my project that using JetpackCompose for FrontEnd and writing by Java for BackEnd to fetch data from Local Server",
+      "markups":123
+    }
+  ]
+}
