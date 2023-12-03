@@ -4,13 +4,14 @@
 
     <form>
         <label for="id">
-            Name
+            ID
         </label><br>
         <input type="text" id="id" name="id" value=<%= user.id %>><br>
         <label for="name">
             Name
         </label><br>
-        <input type="text" id="name" name="name" value=<%= user.name %>><br>
+        <input type="text" id="name" name="name" value=<%= user.name %>><br><br>
+        <input type="submit" value="Submit">
     </form>
  
 <%- include ("_footer.ejs"); %> 

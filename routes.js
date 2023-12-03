@@ -1,4 +1,5 @@
 var express = require("express");
+var url = require('url');
 var update = require('./data/update');
 var read = require('./data/read');
 var data = require('./data/postData');
@@ -6,6 +7,7 @@ var router = express.Router();
 
 router.get("/", function(req,res){
     console.log("Hello I am on a start page here");
+    console.log("Url is: "+req.url);
     const user = data.load();
     res.render("index", {user});
 })
