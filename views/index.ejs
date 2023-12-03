@@ -6,11 +6,19 @@
         <label for="id">
             ID
         </label><br>
-        <input type="text" id="id" name="id" value="1511619"><br>
+        <input type="text" id="id" name="id" value=<%= Post.id %>><br>
+        <label for="title">
+            Title
+        </label><br>
+        <input type="text" size = "30" id="title" name="title" value=<%= Post.title %> width:100><br>
+        <label for="subtitle">
+            Subtitle
+        </label><br>
+        <input type="text" size = "30" id="subtitle" name="subtitle" value=<%= Post.subtitle %>><br>
         <label for="name">
             Name
         </label><br>
-        <input type="text" id="name" name="name" value="2"><br><br>
+        <input type="text" id="name" name="name" value=<%= Post.name %>><br><br>
         <input type="submit" value="Submit">
     </form>
  

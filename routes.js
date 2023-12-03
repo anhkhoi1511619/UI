@@ -1,18 +1,13 @@
 var express = require("express");
-var update = require('./data/update');
+var data = require('./data/update');
 var read = require('./data/read');
-var data = require('./data/postData');
 var router = express.Router();
 
 router.get("/", function(req,res){
     console.log("Hello I am on a start page here");
     console.log("Url is: "+req.url);
-    console.log("Url is: "+req.url);
-
-    console.log("id is: "+req.query.id);
-    console.log("name is: "+req.query.name);
-    const user = data.load();
-    res.render("index", {user});
+    const post = data.query(req);
+    res.render("index", {post});
 })
 router.get("/postContent", function(req,res){
     console.log("Send Content API");
@@ -21,13 +16,6 @@ router.get("/postContent", function(req,res){
     const body = read.run();
     res.write(body);
     res.end();
-})
-
-router.get("/update", function(req,res){
-    console.log("Hello I am ready here to update data");
-    update.run();
-    const user = data.load();
-    res.render("index", {user});
 })
 
 module.exports = router;
