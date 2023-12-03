@@ -1,5 +1,16 @@
 <%- include ("_header.ejs"); %>
  
-    <h1>Welcome to my first Node.js app</h1>
+    <h1>Welcome to my page use Node.js</h1>
+
+    <form>
+        <label for="id">
+            Name
+        </label><br>
+        <input type="text" id="id" name="id" value=<%= user.id %>><br>
+        <label for="name">
+            Name
+        </label><br>
+        <input type="text" id="name" name="name" value=<%= user.name %>><br>
+    </form>
  
 <%- include ("_footer.ejs"); %> 
