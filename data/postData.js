@@ -1,4 +1,4 @@
-const user = {
+user = {
     id: '1511619',
     name: 'Khoi'
 }
