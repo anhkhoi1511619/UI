@@ -12,19 +12,19 @@ exports.run = function() {
 
 exports.query = function(req) {
     //Update object first
-    var post = data.load();
+    // var post = data.load();
     const id = req.query.id;
     console.log("id is in object data: "+id);
-    post.id = id;
+    // post.id = id;
     const title = req.query.title;
     console.log("title is in object data:: "+title);
-    post.title = title;
+    // post.title = title;
     const subtitle = req.query.subtitle;
     console.log("subtitle is in object data:: "+subtitle);
-    post.subtitle = subtitle;
+    // post.subtitle = subtitle;
     const name = req.query.name;
     console.log("name is in object data:: "+name);
-    post.name = name;
+    // post.name = name;
 
 
     // insert json data to send when call API 👇
@@ -36,5 +36,5 @@ exports.query = function(req) {
     const sendStr =  JSON.stringify(content);
     console.log("json will send: "+sendStr);
     fs.writeFileSync('data/postContent.json', JSON.stringify(content));
-    return post;
+    return;
 }
