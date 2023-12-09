@@ -1,16 +1,13 @@
 var fs = require('fs');
-var data = require('./postData');
+// var data = require('data/postData');
 
 
-exports.run = function() {
-    let content = JSON.parse(fs.readFileSync('data/postContent.json','utf-8'));
-    content.id = 10;
-
-    fs.writeFileSync('data/postContent.json', JSON.stringify(content));
-    return;
+exports.read = function() {
+    const str = fs.readFileSync('data/postContent.json', { encoding: 'utf-8' });
+    return str;
 }
 
-exports.query = function(req) {
+exports.query_and_write = function(req) {
     //Update object first
     // var post = data.load();
     const id = req.query.id;
@@ -27,7 +24,7 @@ exports.query = function(req) {
     // post.name = name;
 
 
-    // insert json data to send when call API 👇
+    // write json data to send when call API 👇
     let content = JSON.parse(fs.readFileSync('data/postContent.json','utf-8'));
     content.id = id;
     content.name = name;
